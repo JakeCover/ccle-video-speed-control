@@ -1,16 +1,11 @@
 {
   "manifest_version": 2,
 
-  "name": "Chrome Extension TypeScript Starter",
-  "description": "Chrome Extension, TypeScript, Visual Studio Code",
+  "name": "UCLA CCLE Faster Video",
+  "description": "Allow for even faster playback of videos on CCLE!",
   "version": "1.0",
 
-  "options_ui": {
-    "page": "options.html",
-    "chrome_style": true
-  },
-
-  "browser_action": {
+  "page_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
@@ -28,6 +23,7 @@
 
   "permissions": [
     "storage",
-    "<all_urls>"
+    "https://ccle.ucla.edu/*",
+    "declarativeContent"
   ]
 }
